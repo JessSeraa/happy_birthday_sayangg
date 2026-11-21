@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fff0f5" />
+  <meta name="description" content="Sebuah kejutan kecil penuh cinta untuk Vania dari Jess." />
+  <title>For Vania, With Love ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <div class="floating-hearts" id="floatingHearts" aria-hidden="true"></div>
+  <div class="floating-petals" id="floatingPetals" aria-hidden="true"></div>
+
+  <audio id="bgMusic" loop preload="none">
+    <source src="assets/audio/lagu-kita.mp3" type="audio/mpeg">
+  </audio>
+
+  <button class="music-toggle" id="musicToggle" aria-label="Putar musik" aria-pressed="false">
+    <span class="equalizer" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span id="musicLabel">Putar musik</span>
+  </button>
+
+  <main>
+    <section class="screen hero active" id="home">
+      <div class="hero-card glass">
+        <div class="tiny-label"><span class="sparkle">✦</span> A SPECIAL BIRTHDAY FOR VANIA <span class="sparkle">✦</span></div>
+        <div class="hero-heart">♡</div>
+        <p class="eyebrow">For Someone Special, Vania</p>
+        <h1>Happy Birthday,<br><em>Vania.</em></h1>
+        <p class="hero-copy">Ada satu hari yang selalu ingin aku rayakan dengan cara paling istimewa. Hari ketika dunia menghadirkan kamu.</p>
+        <div class="hero-date">01 · 06 · 2006</div>
+        <button class="primary-btn" id="startBtn">Buka Hadiahmu <span>♡</span></button>
+        <p class="from-line">made with love by <strong>Jess</strong></p>
+      </div>
+      <div class="hero-side-note">a day as lovely as you</div>
+    </section>
+
+    <section class="screen section" id="intro">
+      <div class="section-kicker">01 — A SPECIAL DAY</div>
+      <p class="script">Today is all about you</p>
+      <h2>Untuk Vania,<br><em>yang selalu istimewa.</em></h2>
+      <div class="intro-content">
+        <div class="intro-orbit"><div class="orbit-heart">♥</div><span>♡</span><span>✧</span><span>♡</span></div>
+        <div class="intro-text">
+          <p>Selamat ulang tahun, sayang. Hari ini bukan cuma tentang bertambahnya usia, tapi tentang merayakan seseorang yang kehadirannya membuat banyak hal terasa lebih indah.</p>
+          <p>Aku berharap halaman kecil ini bisa menjadi salah satu alasan kamu tersenyum hari ini. Karena kamu pantas mendapatkan banyak sekali hal baik.</p>
+          <button class="text-btn next-btn" data-next="memories">Lihat cerita kecil kita <span>→</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen section" id="memories">
+      <div class="section-kicker">02 — OUR LITTLE WORLD</div>
+      <p class="script">Little moments, big feelings</p>
+      <h2>Potongan cerita<br><em>yang aku simpan.</em></h2>
+      <p class="section-desc">Beberapa momen mungkin terlihat sederhana, tapi bersamamu, hal sederhana pun jadi kenangan yang berharga.</p>
+      <div class="gallery">
+        <figure class="photo-card photo-tall" tabindex="0" role="button" aria-label="Buka foto kenangan pertama">
+          <img src="assets/photos/foto-1.jpeg" alt="Kenangan pertama kita" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+          <div class="photo-placeholder"><span>♡</span><small>Tambahkan foto pertama</small></div>
+          <figcaption><span>01</span> My favorite hello</figcaption>
+        </figure>
+        <figure class="photo-card photo-offset" tabindex="0" role="button" aria-label="Buka foto momen bersama">
+          <img src="assets/photos/foto-2.jpeg" alt="Momen bersama" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+          <div class="photo-placeholder"><span>✧</span><small>Tambahkan foto kedua</small></div>
+          <figcaption><span>02</span> My happiest place</figcaption>
+        </figure>
+        <figure class="photo-card photo-wide" tabindex="0" role="button" aria-label="Buka foto kenangan manis">
+          <img src="assets/photos/foto-3.jpeg" alt="Kenangan manis" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+          <div class="photo-placeholder"><span>♡</span><small>Tambahkan foto ketiga</small></div>
+          <figcaption><span>03</span> A little forever</figcaption>
+        </figure>
+      </div>
+      <p class="gallery-note">Dan semoga masih ada banyak halaman berikutnya yang bisa kita isi bersama. ♡</p>
+      <button class="text-btn next-btn" data-next="cake">Ada hadiah kecil lagi <span>→</span></button>
+    </section>
+
+    <section class="screen section cake-section" id="cake">
+      <div class="section-kicker">03 — MAKE A WISH</div>
+      <p class="script">A little birthday magic</p>
+      <h2>Make a wish,<br><em>birthday girl.</em></h2>
+      <p class="section-desc">Pejamkan mata sebentar, buat satu harapan terbaikmu, lalu klik setiap lilin untuk meniupnya.</p>
+      <div class="cake-stage">
+        <div class="cake-glow"></div>
+        <div class="candles" aria-label="Lima lilin ulang tahun">
+          <button class="candle" type="button" aria-label="Tiup lilin pertama"><span class="flame"><i></i></span></button>
+          <button class="candle" type="button" aria-label="Tiup lilin kedua"><span class="flame"><i></i></span></button>
+          <button class="candle" type="button" aria-label="Tiup lilin ketiga"><span class="flame"><i></i></span></button>
+          <button class="candle" type="button" aria-label="Tiup lilin keempat"><span class="flame"><i></i></span></button>
+          <button class="candle" type="button" aria-label="Tiup lilin kelima"><span class="flame"><i></i></span></button>
+        </div>
+        <div class="cake-top"><span class="icing-drip"></span></div>
+        <div class="cake-middle"></div><div class="cake-bottom"></div>
+        <div class="cake-plate"></div>
+        <div class="cake-sprinkles">✦　·　♡　·　✦</div>
+      </div>
+      <button class="primary-btn" id="blowBtn">Tiup semua lilin ♡</button>
+      <p class="wish-message" id="wishMessage" aria-live="polite">Klik satu per satu setiap lilin untuk membuat harapanmu.</p>
+      <button class="text-btn next-btn" data-next="letter">Baca surat kecil dariku <span>→</span></button>
+    </section>
+
+    <section class="screen section letter-section" id="letter">
+      <div class="section-kicker">04 — WORDS FROM MY HEART</div>
+      <p class="script">A letter for you</p>
+      <h2>Untuk kamu,<br><em>Vania sayang.</em></h2>
+      <article class="letter-paper">
+        <div class="letter-top">♡ &nbsp; A LITTLE LOVE LETTER &nbsp; ♡</div>
+        <p data-typewriter>Hai, Vania.</p>
+        <p data-typewriter>Selamat ulang tahun, perempuan hebat yang selalu punya tempat spesial di hatiku.</p>
+        <p data-typewriter>Aku mungkin nggak selalu punya kata-kata paling indah untuk menjelaskan betapa berartinya kamu. Tapi aku ingin kamu tahu, kehadiranmu adalah salah satu hal yang paling aku syukuri.</p>
+        <p data-typewriter>Terima kasih sudah menjadi dirimu sendiri. Terima kasih untuk tawa, cerita, perhatian, dan semua hal kecil yang mungkin kamu anggap biasa, tapi selalu punya arti buatku.</p>
+        <p data-typewriter>Di usia barumu ini, aku berharap kamu selalu dikelilingi hal-hal baik. Semoga langkahmu dimudahkan, mimpimu satu per satu terwujud, hatimu selalu punya alasan untuk bahagia, dan kamu tidak pernah lupa betapa berharganya dirimu.</p>
+        <p data-typewriter>Aku nggak bisa menjanjikan semuanya akan selalu sempurna. Tapi aku ingin terus belajar menjadi seseorang yang bisa ikut merayakan bahagiamu, mendengarkan ceritamu, dan menemanimu melewati hari-hari yang berat.</p>
+        <p data-typewriter>Happy birthday, Vania. Keep shining, okay? Dunia jadi lebih cantik karena ada kamu di dalamnya.</p>
+        <p class="letter-sign">With all my love,<br><strong>Jess</strong> <span>♡</span></p>
+      </article>
+      <button class="text-btn next-btn" data-next="final">Ada satu kejutan terakhir <span>→</span></button>
+    </section>
+
+    <section class="screen final-screen" id="final">
+      <div class="final-stars">✦　·　✧　·　♡　·　✧</div>
+      <div class="final-content">
+        <p class="script">One last thing...</p>
+        <h2>You're my<br><em>favorite person.</em></h2>
+        <p class="final-copy">Kalau suatu hari kamu lupa betapa istimewanya dirimu, buka lagi halaman ini. Ada seseorang bernama Jess yang selalu punya alasan untuk bersyukur karena kamu ada.</p>
+        <button class="surprise-btn" id="surpriseBtn">One Last Surprise ♡</button>
+        <div class="surprise-message" id="surpriseMessage">
+          <div class="big-heart">♥</div>
+          <h3>Happy Birthday, My Favorite Person</h3>
+          <p>Semoga tahun ini menjadi salah satu bab paling indah dalam hidupmu. Aku sayang kamu, hari ini dan di banyak hari setelahnya.</p>
+          <span>— Jess, with love ♡</span>
+        </div>
+        <button class="restart-btn" id="restartBtn">Ulangi dari awal ↗</button>
+      </div>
+      <div class="final-footer">MADE WITH ♡ FOR VANIA · 01.06.2006</div>
+    </section>
+  </main>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Foto kenangan" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Tutup foto">×</button>
+    <figure>
+      <img id="lightboxImage" src="" alt="">
+      <figcaption id="lightboxCaption"></figcaption>
+    </figure>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
